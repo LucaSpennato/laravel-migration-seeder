@@ -56,6 +56,17 @@ class TrainsTableSeeder extends Seeder
                 "number_of_carriages" => 4,
                 "is_on_time" => true,
                 "is_cancelled" => false,
+            ],
+            [
+                "agency" => 'trenitalia',
+                "departure_station" => 'napoli',
+                "arrival_station" => 'bari',
+                "departure_time" => '2022-09-09 13:30:20',
+                "arrival_time" => '2022-09-09 16:39:50',
+                "train_code" => '345234jfsjs',
+                "number_of_carriages" => 8,
+                "is_on_time" => true,
+                "is_cancelled" => false,
             ],           
         ];
 
