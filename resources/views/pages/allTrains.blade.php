@@ -1,11 +1,13 @@
 @extends('home')
 
-@section('title', 'Today\'s Trains')
+@section('title', 'trains-selections')
 
 @section('trains-selections')
 
-    <h1>I treni in partenza oggi</h1>
-
+    <h1>
+        Tutti i treni
+    </h1>
+    
     @forelse ($trains as $train)
         <ul>
             <li>
@@ -20,7 +22,7 @@
         </ul>
     @empty
         <h3>
-            Non ci sono treni in partenza oggi.
+            Non ci sono treni
         </h3>
     @endforelse
 

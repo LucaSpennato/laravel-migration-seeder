@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "TrainController@index");
+Route::get('/', "TrainController@index")->name('home');
+Route::get('/today', "TrainController@today")->name('todayTrain');
