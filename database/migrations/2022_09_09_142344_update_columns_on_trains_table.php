@@ -29,10 +29,10 @@ class UpdateColumnsOnTrainsTable extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->string('agency');
-            $table->string('departure_station');
-            $table->string('arrival_station');
-            $table->string('train_code');
+            $table->string('agency')->change();
+            $table->string('departure_station')->change();
+            $table->string('arrival_station')->change();
+            $table->string('train_code')->change();
         });
     }
 }

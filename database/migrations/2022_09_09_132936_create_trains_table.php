@@ -21,7 +21,7 @@ class CreateTrainsTable extends Migration
             $table->date('departure_time');
             $table->date('arrival_time');
             $table->string('train_code');
-            $table->smallInteger('number_of_carriages');
+            $table->tinyInteger('number_of_carriages');
             $table->boolean('is_on_time')->default(true);
             $table->boolean('is_cancelled')->default(false);
             $table->timestamps();
